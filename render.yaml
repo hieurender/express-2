@@ -2,7 +2,7 @@ previewsEnabled: true
 
 services:
   - type: web
-    name: iac-test-2
+    name: iac-test-3
     env: node
     repo: https://github.com/hieurender/express-hello-world
     buildCommand: yarn
@@ -14,10 +14,10 @@ services:
         sync: false
       # Will be copied
       # USER_PROVIDED_SECRET will be copied to preview environments
-      - fromGroup: all-settings
+      - fromGroup: all-settings-2
 
 envVarGroups:
-- name: all-settings
+- name: all-settings-2
   envVars:
     - key: USER_PROVIDED_SECRET
       sync: false
