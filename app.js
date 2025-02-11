@@ -9,3 +9,5 @@ app.get("/envs", (req, res) => res.send(`SECRET: ${process.env['SECRET']}; SECRE
 [10000, 8080, 9000].forEach((p, i) => {
   app.listen(p, () => console.log(`Example app ${i} listening on port ${p}!`));
 });
+
+setInterval(() => console.log("logging my share"), 1000);
